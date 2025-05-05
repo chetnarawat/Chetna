@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Photography Portfolio</title>
+    <style>
+       
+        body {
+            font-family: Arial;
+            margin: 10;
+            padding: 10;
+           
+        }
+
+        header {
+            background-color: #333;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+       
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        h1, h2 {
+            color: #8a6969;
+        }
+        
+
+        
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background: url('OIP.jpg') ;
+            color: rgb(0, 0, 0);
+            height: 100vh;
+            
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        #gallery .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        #gallery .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <CENTER> <h1 > PHOTOGRAPHY CLUB</h1>
+        </CENTER>
+       
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1>Welcome to My Photography Portfolio</h1>
+        <p>Explore the world through my lens</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <TABLE width="500px" height="300px">
+            <TR><TH>
+             <div class="product">
+                 <img src="OIP.jpg" width="250px" height="250px">
+                 <p><a href="ROSE"></a>color<input type="color" id="c" name="color"></p>
+                 <button onclick="addToCart('Rose Bouquet')">Add to Cart</button>
+             </div></TH>
+                 <TH>
+                 <div class="product">
+                 <img src="sea.jpg" width="250px" height="250px">
+                 <p><a href="TULIP"></a>color<input type="color" id="c" name="color"></p>
+                   <button onclick="addToCart('Tulip Bouquet')">Add to Cart</button>
+                 </div></TH> 
+             <TH> 
+             <div class="product">
+                 <img src="TWI.jpg" width="250px" height="250px">
+                 <p><a href="SUNFLOWER"></a>color<input type="color" id="c" name="color"></p>
+                 
+                 <button onclick="addToCart('Sunflower Bouquet')">Add to Cart</button>
+             </div></TH>
+            </Table>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I'm a passionate photographer, capturing life's most beautiful moments. I specialize in landscape, portrait, and event photography.</p>
+    <P>What separates inspiring photographs from ordinary ones, and how can you improve the quality of your own photos? This article lays a foundation to answer to those questions and introduce you to the concept of photography from the ground up.</P>
+    <h2>What Is Photography?</h2>
+Photography is the art of capturing light with a camera, usually via a digital sensor or film, to create an image. With the right camera equipment, you can even photograph wavelengths of light invisible to the human eye, including UV, infrared, and radio waves.
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you're interested in working
+
+    <!-- Contact Section -->
+    <section id="contact">
+       
+        <p>Email: info@photographyclub.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 PHOTOGRAPHY CLUB. All Rights Reserved.</p>
+    </footer>
+<script>
+    // Function to simulate adding items to a cart
+    function addToCart(productName) {
+        alert(`${productName} has been added to your cart!`);
+    }
+</script>
